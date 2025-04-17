@@ -1,0 +1,80 @@
+name: note
+description: A markdown note-taking app built with Flutter
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # UI 相關
+  cupertino_icons: ^1.0.5
+  flutter_markdown: ^0.6.15
+  google_fonts: ^4.0.4
+  
+  # 狀態管理
+  provider: ^6.0.5
+  
+  # 本地存儲
+  shared_preferences: ^2.1.2
+  path_provider: ^2.0.15
+  sqflite: ^2.2.8+4
+  sqflite_common_ffi: ^2.2.5
+  
+  # Markdown 處理
+  markdown: ^7.1.0
+  flutter_highlight: ^0.7.0
+  
+  # 實用工具
+  intl: ^0.18.1
+  uuid: ^3.0.7
+  # 移除 file_picker，暫時不使用以解決 Windows 平台問題
+  # file_picker: ^5.3.2
+  url_launcher: ^6.1.12
+  
+  # 桌面整合 (用於桌面版)
+  window_size:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
+      ref: main
+      
+  # Firebase 相關
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.2
+  cloud_firestore: ^5.6.6
+  firebase_analytics: ^11.4.5
+  google_sign_in: ^6.1.6  # 添加 Google 登入支持
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+  flutter_launcher_icons: ^0.13.1
+  
+flutter_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    icon_size: 48 # min:48, max:256, default: 48
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700

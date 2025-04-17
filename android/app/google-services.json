@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "761356751989",
+    "project_id": "makenote-8576c",
+    "storage_bucket": "makenote-8576c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761356751989:android:3a7fdd83c53d2ca0cbd43c",
+        "android_client_info": {
+          "package_name": "com.example.note"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC11RYnC7nfuUrAeW0r_ie4efgOBVceX7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
